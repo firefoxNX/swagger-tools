@@ -32,7 +32,7 @@ var debug = require('debug')('swagger-tools:middleware:metadata');
 var mHelpers = require('./helpers');
 var multer = require('multer');
 var parseurl = require('parseurl');
-var pathToRegexp = require('path-to-regexp');
+var pathToRegexp = require('path-to-regexp').pathToRegexp;
 
 // Upstream middlewares
 var bodyParserOptions = {
